@@ -1,28 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { RouterModule } from './router/router.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+
 import { AppComponent } from './app.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { FiltroBoxComponent } from './filtro-box/filtro-box.component';
-import { TableDataComponent } from './table-data/table-data.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: DashboardComponent },
-    ])
+    BrowserAnimationsModule,
+    
+    RouterModule,
+    DashboardModule
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
-    DashboardComponent,
-    FiltroBoxComponent,
-    TableDataComponent
+    TopBarComponent
   ],
   bootstrap: [
     AppComponent
