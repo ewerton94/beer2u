@@ -4,21 +4,25 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { FiltroBoxComponent } from './filtro-box/filtro-box.component';
+import { TableDataComponent } from './table-data/table-data.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: DashboardComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    DashboardComponent,
+    FiltroBoxComponent,
+    TableDataComponent
   ],
   bootstrap: [
     AppComponent
