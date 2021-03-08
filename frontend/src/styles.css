@@ -12,12 +12,13 @@ body {
   margin: 0;
 }
 
-.container {
+div .container {
   display: flex;
   flex-direction: row;
   margin : 20px;
   justify-content: center;
 }
+
 .sub-container {
   min-width: 700px;
 
