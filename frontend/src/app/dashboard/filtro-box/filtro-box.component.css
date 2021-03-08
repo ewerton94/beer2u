@@ -1,0 +1,17 @@
+.filtro-action-buttons {
+  padding-bottom: 20px;
+}
+
+.filtro-headers-align .mat-expansion-panel-header-title,
+.filtro-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.filtro-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filtro-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
