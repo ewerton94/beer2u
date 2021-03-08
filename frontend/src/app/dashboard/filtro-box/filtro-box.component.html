@@ -5,9 +5,16 @@
         <mat-icon>filter_alt</mat-icon>
         Filtro
       </mat-panel-title>
-      
-      
     </mat-expansion-panel-header>
-
+    <form (ngSubmit)="onSubmit()" [formGroup]="queryForm">
+      <div class="row">
+        <app-autocompleteinput id="state" class="col" formControlName="state" [options]="states" label="Estado">
+        </app-autocompleteinput>
+        <app-autocompleteinput id="city" class="col" formControlName="city" [options]="cities" label="Cidade">
+        </app-autocompleteinput>
+        <app-date-picker formControlName="date" class="col" label="Date"></app-date-picker>
+      </div>
+      <button>Enviar</button>
+    </form>
   </mat-expansion-panel>
 </mat-accordion>
