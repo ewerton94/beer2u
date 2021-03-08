@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { RouterModule } from './router/router.module';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -14,8 +14,9 @@ import { TopBarComponent } from './top-bar/top-bar.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     BrowserAnimationsModule,
-    
+
     RouterModule,
     DashboardModule
   ],
