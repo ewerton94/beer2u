@@ -1,8 +1,8 @@
 from db import Mongo
 import cherrypy
 
-from states import States
-from cities import Cities
+from .states import States
+from .cities import Cities
 
 
 if __name__ == '__main__':
