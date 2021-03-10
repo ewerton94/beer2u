@@ -3,7 +3,7 @@
 import cherrypy
 from cherrypy.test import helper
 # from cherrypy.lib.sessions import RamSession
-from ..cities import Cities
+from leitos_covid.cities import Cities
 
 
 TEST = [1, 2, 3]

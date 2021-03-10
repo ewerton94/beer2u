@@ -1,8 +1,9 @@
-from db import Mongo
+from leitos_covid.settings.db import Mongo
 import cherrypy
 
-from .states import States
-from .cities import Cities
+from leitos_covid.states import States
+from leitos_covid.cities import Cities
+from leitos_covid.occupation import Occupation
 
 
 if __name__ == '__main__':
@@ -18,4 +19,5 @@ if __name__ == '__main__':
         }
     }
     cherrypy.tree.mount(States(m), '/api/states/', conf)
-    cherrypy.quickstart(Cities(m), '/api/cities/', conf)
+    cherrypy.tree.mount(Cities(m), '/api/cities/', conf)
+    cherrypy.quickstart(Occupation(), '/api/ocupation/', conf)

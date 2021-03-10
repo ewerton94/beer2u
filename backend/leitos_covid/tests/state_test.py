@@ -4,7 +4,7 @@ import cherrypy
 from cherrypy.test import helper
 # from cherrypy.lib.sessions import RamSession
 
-from ..states import States
+from leitos_covid.states import States
 
 
 TEST = [1, 2, 3]

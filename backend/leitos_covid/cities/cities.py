@@ -1,4 +1,4 @@
-from .utils import BaseAPI
+from ..utils import BaseAPI
 
 
 class Cities(BaseAPI):
